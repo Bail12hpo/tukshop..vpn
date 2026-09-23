@@ -4,8 +4,8 @@
 #announce: Ваш VPN на 1 месяц. Кто зайдёт по ссылке — получит 1 месяц доступа на свой VPN HAPP 1 раз.
 #profile-update-interval: 1
 #expires: 24.09.26-24.10.26
-#status: expired
-#expired: true
+#status: active
+#expired: false
 vless://f495298f-2bdb-4fd8-9ac9-5dd33d1b482a@45.139.197.27:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=angldril.pumpkinpie.study&fp=firefox&pbk=W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2S[...]
 vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.246.58:9881?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&sid=aa&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%AE%F0%9F%87%B9%F0%9F%93%A1TukShopVpn-1
 vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.244.178:9881?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU&sid=aa&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%AE%F0%9F%87%B9%F0%9F%93%A1TukShopVpn-2
