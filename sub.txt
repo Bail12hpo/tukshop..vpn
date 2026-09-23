@@ -3,6 +3,7 @@
 #support-url: https://t.me/Artew777
 #announce: Наш VPN на 1 месяц. Кто зайдёт по ссылке — получит 1 месяц доступа на свой VPN HAPP 1 раз.
 #profile-update-interval: 1
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.243.18:9872?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc&sid=aabbccdd&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%BA%F0%9F%87%8D%20TukShopVpn%201
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.123.161.222:9892?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&sid=aabbccdd&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%BA%F0%9F%87%8D%20TukShopVpn%202
-vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.244.38:9881?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&sid=aa&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%BA%F0%9F%87%8D%20TukShopVpn%203
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.243.18:9872?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc&sid=aabbccdd&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%BA%F0%9F%87%BB%20TukShopVpn%201
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.123.161.222:9892?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU&sid=aabbccdd&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%BA%F0%9F%87%BB%20TukShopVpn%202
+vless://5d16ac22-6eea-426f-b778-6f4c2961faef@176.108.244.38:9881?encryption=none&security=reality&sni=dl.google.com&fp=qq&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&sid=aa&type=grpc&mode=gun&authority=&serviceName=grpc-tunnel#%F0%9F%87%BA%F0%9F%87%BB%20TukShopVpn%203
+vless://7cde4592-4758-415f-8b97-c188faa4d1c9@188.225.25.142:443?flow=xtls-rprx-vision&encryption=none&security=reality&sni=prime.betust.net&fp=firefox&pbk=SxbaWzlvE_HQqqsA4PNX2PFcSYXTVE2nZlgLc7cPOgk&sid=8681edc9&type=tcp&headerType=none#🇪🇺 📶 ОБХОД ГЛУШИЛОК
