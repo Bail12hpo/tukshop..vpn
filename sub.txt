@@ -6,6 +6,5 @@
 #expires: 24.09.26-24.10.26
 #status: active
 #expired: false
-vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@germa12.ggisopi.su:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germa12.ggisopi.su&fp=qq&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#GERMA12
-vless://0221981f-3517-0003-8f7d-5f3d89a81717@cosw.ggisopi.su:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=cosw.ggisopi.su&fp=qq&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#COSW
-vless://vXCNQBMqKks5rfNVxZ_W-Tv57Pp5NLDs@condrtroj.ggisopi.su:443?encryption=none&security=tls&sni=condrtroj.ggisopi.su&fp=qq&type=grpc&serviceName=trgrpc&mode=gun&alpn=h2#🇳🇱Нидерланды
+vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@germa12.ggisopi.su:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germa12.ggisopi.su&fp=qq&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇩🇪Германия
+vless://0221981f-3517-0003-8f7d-5f3d89a81717@cosw.ggisopi.su:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=cosw.ggisopi.su&fp=qq&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇫🇮Финляндия
