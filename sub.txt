@@ -1,5 +1,5 @@
 #profile-title: TukShopVpn
-#subscription-userinfo: upload=0; download=0; total=0
+#subscription-userinfo: upload=0; download=0; total=0; expire=1793145599
 #support-url: https://t.me/Artew777
 #announce: Ваш VPN на 1 месяц. Кто зайдёт по ссылке — получит 1 месяц доступа на свой VPN HAPP 1 раз.
 #profile-update-interval: 1
