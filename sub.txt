@@ -6,6 +6,7 @@
 #expires: 24.09.26-24.10.26
 #status: active
 #expired: false
+#hide-settings: 1
 vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@germa12.ggisopi.su:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germa12.ggisopi.su&fp=edge&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇳🇱%20Нидерланды
 vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@finl11.ali-bard.online:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=finl11.ali-bard.online&fp=qq&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇫🇮%20Финляндия
 vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@polo.ali-bard.online:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=polo.ali-bard.online&fp=edge&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇵🇱%20Польша
