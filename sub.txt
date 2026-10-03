@@ -1,4 +1,5 @@
 #profile-title: TukShopVpn🪙💸
+#hide-settings: 1
 #subscription-userinfo: upload=0; download=0; total=0; expire=1793145599
 #support-url: https://t.me/Artew777
 #announce: Если не работает ВПН просто обновите 🔄 и все будет работать☑️
