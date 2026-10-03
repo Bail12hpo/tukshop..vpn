@@ -18,3 +18,499 @@ vless://2c634977-584e-4e1f-b501-1b70c77a6743@185.141.227.180:2053?encryption=non
 vless://2c634977-584e-4e1f-b501-1b70c77a6743@185.141.227.180:2053?encryption=none&security=tls&sni=dismissaltree.net&alpn=h2%2C%20http%2F1.1&fp=random&type=xhttp&mode=auto&host=dismissaltree.net&path=%2Fapi%2Fv1%2Fupload&extra=%7B%22host%22%3A%22%22%2C%22path%22%3A%22%22%2C%22mode%22%3A%22%22%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22xPaddingObfsMode%22%3Afalse%2C%22xPaddingKey%22%3A%22%22%2C%22xPaddingHeader%22%3A%22%22%2C%22xPaddingPlacement%22%3A%22%22%2C%22xPaddingMethod%22%3A%22%22%2C%22uplinkHTTPMethod%22%3A%22%22%2C%22sessionIDPlacement%22%3A%22%22%2C%22sessionIDKey%22%3A%22%22%2C%22sessionIDTable%22%3A%22%22%2C%22sessionIDLength%22%3A%220%22%2C%22seqPlacement%22%3A%22%22%2C%22seqKey%22%3A%22%22%2C%22uplinkDataPlacement%22%3A%22%22%2C%22uplinkDataKey%22%3A%22%22%2C%22uplinkChunkSize%22%3A%220%22%2C%22noGRPCHeader%22%3Afalse%2C%22noSSEHeader%22%3Afalse%2C%22scMaxEachPostBytes%22%3A%220%22%2C%22scMinPostsIntervalMs%22%3A%220%22%2C%22scMaxBufferedPosts%22%3A0.0%2C%22scStreamUpServerSecs%22%3A%220%22%2C%22serverMaxHeaderBytes%22%3A0.0%2C%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%2C%22maxConnections%22%3A%220%22%2C%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hMaxRequestTimes%22%3A%220%22%2C%22hMaxReusableSecs%22%3A%220%22%2C%22hKeepAlivePeriod%22%3A0.0%7D%7D#%F0%9F%87%B7%F0%9F%87%BA%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8
 vless://2c634977-584e-4e1f-b501-1b70c77a6743@185.141.227.180:2053?encryption=none&security=tls&sni=dismissaltree.net&alpn=h2&fp=random&type=xhttp&mode=auto&host=dismissaltree.net&path=%2Fapi%2Fv1%2Fupload#%F0%9F%87%B7%F0%9F%87%BA%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8
 vless://2c634977-584e-4e1f-b501-1b70c77a6743@185.141.227.180:2053?encryption=none&security=tls&sni=dismissaltree.net&alpn=h2%2C%20http%2F1.1&fp=random&type=xhttp&mode=auto&path=%2Fapi%2Fv1%2Fupload#%F0%9F%87%B7%F0%9F%87%BA%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8
+{
+  "dns": {
+    "rtt": true,
+    "servers": [
+      "9.9.9.9",
+      "8.8.4.4",
+      "1.0.0.1",
+      "94.140.14.14"
+    ],
+    "queryStrategy": "UseIPv4"
+  },
+  "routing": {
+    "rules": [
+      {
+        "port": "25",
+        "outboundTag": "block"
+      },
+      {
+        "domain": [
+          "mmts9.ru",
+          "subpage.alibarda-ru.ru",
+          "sovcombank.ru",
+          "domain:rkn.gov.ru",
+          "domain:lemanapro.ru",
+          "domain:xn--b1afabzvcegckfhg.xn--p1ai",
+          "heytapdl.com",
+          "yandex.net",
+          "api.prod.digital.uni.rest",
+          "appsflyersdk.com",
+          "moengage.com",
+          "mindbox.ru",
+          "heytapdl.com",
+          "avito.ru",
+          "avito.st",
+          "tbank.ru",
+          "tinkoff.ru",
+          "acdn.tinkoff.ru",
+          "static.tinkoff.ru",
+          "invest-public-api.tinkoff.ru",
+          "tinkoff.ru",
+          "t-id.ru",
+          "tcs.ru",
+          "rutube.ru",
+          "lkip2.nalog.ru",
+          "magnit.ru",
+          "rkn.gov.ru",
+          "2gis.com",
+          "2gis.ru",
+          "adfox.ru",
+          "admetrica.ru",
+          "x5.ru",
+          "aeroflot.ru",
+          "aif.ru",
+          "algoritmika.org",
+          "amediateka.ru",
+          "api.ip.sb",
+          "api.oneme.ru",
+          "apiok.ru",
+          "appsmail.ru",
+          "apptracer.ru",
+          "auchan.ru",
+          "aviasales.ru",
+          "beeline.ru",
+          "beget.com",
+          "beget.ru",
+          "boxberry.ru",
+          "burgerkingrus.ru",
+          "cdek.ru",
+          "cian.ru",
+          "code-class.ru",
+          "cxhub.ru",
+          "delivery-club.ru",
+          "dellin.ru",
+          "detmir.ru",
+          "dnevnik.ru",
+          "domclick.ru",
+          "drive2.ru",
+          "dzen.ru",
+          "dzeninfra.ru",
+          "farpost.ru",
+          "fd.oneme.ru",
+          "flypobeda.ru",
+          "forbes.ru",
+          "gazeta.ru",
+          "geobasket.ru",
+          "gismeteo.ru",
+          "gosuslugi.ru",
+          "gu-st.ru",
+          "hh.ru",
+          "hhcdn.ru",
+          "i.oneme.ru",
+          "ingos.ru",
+          "interfax.ru",
+          "irr.ru",
+          "ivi.ru",
+          "iz.ru",
+          "kinopoisk.ru",
+          "kommersant.ru",
+          "kontur.host",
+          "kontur.ru",
+          "kp.ru",
+          "kuper.ru",
+          "lamoda.ru",
+          "lenta.com",
+          "lenta.ru",
+          "magnit.com",
+          "magnit.ru",
+          "magnit-info.ru",
+          "magnit-kuryer.ru",
+          "magnit-market.ru",
+          "magnitcosmetic.ru",
+          "mail.ru",
+          "max.ru",
+          "megafon.ru",
+          "megamarket.ru",
+          "megamarket.tech",
+          "metro-cc.ru",
+          "mgts.ru",
+          "miniapps.max.ru",
+          "mk.ru",
+          "moex.com",
+          "more.tv",
+          "mos.ru",
+          "mosreg.ru",
+          "motivtelecom.ru",
+          "my.games",
+          "myapelsin.ru",
+          "mycdn.me",
+          "n1.ru",
+          "naydex.net",
+          "nic.ru",
+          "ntv.ru",
+          "o3.ru",
+          "o3t.ru",
+          "o3team.ru",
+          "odkl.ru",
+          "ok.me",
+          "ok.ru",
+          "okcdn.ru",
+          "okeydostavka.ru",
+          "okko.tv",
+          "oneme.ru",
+          "ostrovok.ru",
+          "ozon.ru",
+          "ozon-dostavka.ru",
+          "ozone.ru",
+          "paywb.com",
+          "pecom.ru",
+          "perekrestok.ru",
+          "pervye.ru",
+          "premier.one",
+          "pyaterochka.ru",
+          "rambler.ru",
+          "rambler-co.ru",
+          "rbc.ru",
+          "reg.ru",
+          "reso.ru",
+          "rg.ru",
+          "ria.ru",
+          "rosgosstrah.ru",
+          "rostics.ru",
+          "rt.ru",
+          "rustore.ru",
+          "rutube.ru",
+          "ruwiki.ru",
+          "rwb.ru",
+          "rzd.ru",
+          "s7.ru",
+          "samokat.ru",
+          "sdk-api.apptracer.ru",
+          "sferum-dev.ru",
+          "sirena-travel.ru",
+          "skyeng.ru",
+          "smailru.net",
+          "smotrim.ru",
+          "sogaz.ru",
+          "sravni.ru",
+          "start.ru",
+          "summerstage.ru",
+          "svpressa.ru",
+          "t-j.ru",
+          "t2.ru",
+          "t2mobile.ru",
+          "tamtam.chat",
+          "tander.ru",
+          "tank-online.com",
+          "tass.ru",
+          "taximaxim.ru",
+          "tech-mail.ru",
+          "tele2.ru",
+          "tildaapi.com",
+          "timeweb.com",
+          "timeweb.ru",
+          "tns-counter.ru",
+          "tracker-api.vk-analytics.ru",
+          "trvl.yandex.net",
+          "turbopages.org",
+          "tutu.ru",
+          "tvzavr.ru",
+          "umschool.net",
+          "userapi.com",
+          "utair.ru",
+          "vedomosti.ru",
+          "vk.cc",
+          "vk.com",
+          "vk.company",
+          "vk.link",
+          "vk.ru",
+          "vk-apps.ru",
+          "vk-cdn.net",
+          "vk-cloud.ru",
+          "vk-stadium.ru",
+          "vkcs.cloud",
+          "vkontakte.com",
+          "vkontakte.ru",
+          "vkpay.app",
+          "vkpay.com",
+          "vkpay.io",
+          "vkplay.ru",
+          "vkuser.net",
+          "vkuseraudio.com",
+          "vkuseraudio.net",
+          "vkuserlive.com",
+          "vkuserlive.net",
+          "vkuservideo.com",
+          "vkuservideo.net",
+          "vkusno-i-tochka.ru",
+          "vkusnoitochka.ru",
+          "vkusvill.ru",
+          "vkvideo.ru",
+          "vmailru.net",
+          "wb.ru",
+          "wb-basket.ru",
+          "wbbasket.ru",
+          "wbpay.ru",
+          "webvisor.com",
+          "webvisor.org",
+          "wibes.ru",
+          "wildberries.ru",
+          "wink.ru",
+          "x5.ru",
+          "x5retail.ru",
+          "xn--80ajghhoc2aj1c8b.xn--p1ai",
+          "xn--90acagbhgpca7c8c7f.xn--p1ai",
+          "xn--90aivcdt6dxbc.xn--p1ai",
+          "xn--b1aew.xn--p1ai",
+          "ya.ru",
+          "yaklass.ru",
+          "yandex.by",
+          "yandex.cloud",
+          "yandex.com",
+          "yandex.kz",
+          "yandex.net",
+          "yandex.ru",
+          "mail.yandex.ru",
+          "yandex.st",
+          "smartcaptcha.yandex.ru",
+          "yandex-team.ru",
+          "yandexcloud.net",
+          "yandexmetrica.com",
+          "yastat.net",
+          "yastatic.net",
+          "youla.ru"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "network": "tcp,udp",
+        "balancerTag": "lb_combined"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "lb_combined",
+        "selector": [
+          "smart",
+          "lte"
+        ],
+        "strategy": {
+          "type": "leastLoad",
+          "settings": {
+            "costs": [
+              {
+                "match": "^lte",
+                "value": 10000,
+                "regexp": true
+              }
+            ],
+            "maxRTT": "3000ms",
+            "expected": 2
+          }
+        }
+      }
+    ],
+    "domainMatcher": "hybrid",
+    "domainStrategy": "IPIfNonMatch"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "udp": true,
+        "auth": "noauth"
+      },
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": false,
+        "destOverride": [
+          "tls",
+          "http",
+          "quic"
+        ],
+        "metadataOnly": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "routeOnly": false,
+        "destOverride": [
+          "tls",
+          "http",
+          "quic"
+        ],
+        "metadataOnly": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "smart",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "condrtroj.ggisopi.su",
+            "port": 443,
+            "password": "vXCNQBMqKks5rfNVxZ_W-Tv57Pp5NLDs"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "trgrpc",
+          "authority": "",
+          "mode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "condrtroj.ggisopi.su",
+          "enableSessionResumption": false,
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "smart-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "germa12.ggisopi.su",
+            "port": 443,
+            "users": [
+              {
+                "id": "0221981f-3517-4dcb-8f7d-5f3d89a81717",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {},
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "germa12.ggisopi.su",
+          "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "lte",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "condrtroj.ggisopi.su",
+            "port": 443,
+            "password": "vXCNQBMqKks5rfNVxZ_W-Tv57Pp5NLDs"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "trgrpc",
+          "authority": "",
+          "mode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "condrtroj.ggisopi.su",
+          "enableSessionResumption": false,
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "lte-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "germa12.ggisopi.su",
+            "port": 443,
+            "users": [
+              {
+                "id": "0221981f-3517-4dcb-8f7d-5f3d89a81717",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {},
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "germa12.ggisopi.su",
+          "publicKey": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    },
+    {
+      "mux": {
+        "enabled": true,
+        "concurrency": -1,
+        "xudpProxyUDP443": "reject"
+      },
+      "tag": "direct-mux",
+      "protocol": "freedom",
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "mark": 255,
+          "TcpNoDelay": true
+        },
+        "security": ""
+      }
+    }
+  ],
+  "burstObservatory": {
+    "pingConfig": {
+      "timeout": "5s",
+      "interval": "36s",
+      "sampling": 5,
+      "httpMethod": "HEAD",
+      "destination": "http://cp.cloudflare.com/generate_204",
+      "connectivity": ""
+    },
+    "subjectSelector": [
+      "smart",
+      "lte"
+    ]
+  },
+  "remarks": "🇪🇺🔥 Автовыбор // Базовые 👇"
+}
