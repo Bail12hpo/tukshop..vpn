@@ -2,6 +2,7 @@
 #subscription-userinfo: upload=0; download=0; total=0; expire=1793145599
 #support-url: https://t.me/Artew777
 #announce: Если не работает ВПН просто обновите 🔄 и все будет работать☑️
+🆘ВПН может не работать поэтому используйте Польшу Финляндию Швецию🆘
 #profile-update-interval: 1
 #expires: 24.09.26-24.10.26
 #status: active
@@ -12,4 +13,5 @@ vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@finl11.ali-bard.online:443?encrypti
 vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@polo.ali-bard.online:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=polo.ali-bard.online&fp=edge&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇵🇱%20Польша
 vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@germa12.ggisopi.su:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germa12.ggisopi.su&fp=edge&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇩🇪%20Германия
 vless://2c634977-584e-4e1f-b501-1b70c77a6743@78.159.250.84:2053?encryption=none&security=tls&sni=summerculture.net&fp=firefox&type=xhttp&mode=auto&host=summerculture.net&path=%2Fapi%2Fv1%2Fupload#%F0%9F%87%AB%F0%9F%87%B2%20%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8
+vless://0221981f-3517-4dcb-8f7d-5f3d89a81717@sweth.ali-bard.online:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=sweth.ali-bard.online&fp=firefox&pbk=SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I&type=tcp&headerType=none#🇨🇭%20Швейцария
 vless://953358cb-82ba-4296-960d-6d2ec3468f4c@37.18.14.168:10654?encryption=none&security=reality&sni=bl3fk52.sysopnova.art&fp=firefox&pbk=ds10ztOlMn8xfeIKEQ1m3I-tdem-abZbHKtJCU13CQM&sid=5c3fb122&type=xhttp&mode=packet-up&path=%2Fxhttp_client_upload#%F0%9F%87%AB%F0%9F%87%B2%20%D0%91%D0%B5%D0%BB%D1%8B%D0%B5%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8
