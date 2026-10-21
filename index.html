@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TukShop VPN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #e6f0fa 0%, #d4e4f7 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 16px;
+        }
+
+        .page {
+            display: none;
+            width: 100%;
+            max-width: 410px;
+        }
+
+        .page.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .welcome {
+            font-size: 1.5rem;
+            color: #1e5a9c;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .username-here {
+            color: #2196f3;
+            font-weight: 700;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(31, 91, 171, 0.08);
+        }
+
+        .card:active {
+            background: #f0f7ff;
+            transform: scale(0.98);
+        }
+
+        .card-icon {
+            font-size: 1.3rem;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            color: #1b1b1b;
+            font-weight: 500;
+        }
+
+        .back-btn {
+            background: transparent;
+            border: none;
+            color: #2196f3;
+            font-size: 0.95rem;
+            padding: 8px 0;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 24px 20px;
+            box-shadow: 0 2px 8px rgba(31, 91, 171, 0.1);
+            margin-bottom: 16px;
+        }
+
+        .box-title {
+            font-size: 1.2rem;
+            color: #1e5a9c;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .info-row {
+            padding: 12px 0;
+            border-bottom: 1px solid #e8eef5;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-size: 0.85rem;
+            color: #8e9aa8;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 0.95rem;
+            color: #1b1b1b;
+            word-break: break-all;
+        }
+
+        .info-value a {
+            color: #2196f3;
+            text-decoration: none;
+        }
+
+        .promo-box {
+            background: #f0f7ff;
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .promo-text {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #1e6abc;
+            letter-spacing: 0.5px;
+        }
+
+        .promo-desc {
+            font-size: 0.8rem;
+            color: #5b8cc7;
+            margin-top: 6px;
+            width: 100%;
+        }
+
+        .platform-card {
+            background: #f5f9ff;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            border: 2px solid transparent;
+        }
+
+        .platform-card:hover, .platform-card.active {
+            border-color: #42a5f5;
+            background: #eaf4ff;
+        }
+
+        .platform-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .method-block {
+            background: #f9fbfe;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border-left: 3px solid #42a5f5;
+        }
+
+        .method-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #1e5a9c;
+            margin-bottom: 10px;
+        }
+
+        .link-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .link-text {
+            font-size: 0.85rem;
+            color: #333;
+            flex: 1;
+            word-break: break-all;
+        }
+
+        .qrcode-block {
+            text-align: center;
+            padding: 16px;
+            background: #fff;
+            border-radius: 10px;
+            border: 2px dashed #90caf9;
+            margin-top: 10px;
+        }
+
+        .qrcode-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 8px;
+            background: #f0f7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .qrcode-note {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .oneclick-btn {
+            display: inline-block;
+            background: #2196f3;
+            color: #fff !important;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 4px;
+            transition: background 0.2s ease;
+        }
+
+        .oneclick-btn:hover {
+            background: #1976d2;
+        }
+
+        .copy-btn {
+            background: #e1edfa;
+            border: none;
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            color: #1e6abc;
+            font-weight: 500;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .copy-btn:active {
+            background: #c9dff5;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #d0d9e3;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 12px;
+            outline: none;
+            background: #fafbfc;
+        }
+
+        input:focus {
+            border-color: #2196f3;
+            background: #fff;
+        }
+
+        .save-btn {
+            background: #2196f3;
+            border: none;
+            border-radius: 10px;
+            padding: 14px 24px;
+            font-size: 1rem;
+            color: #ffffff;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s ease;
+        }
+
+        .save-btn:hover {
+            background: #1976d2;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 40px;
+            color: #94a3b3;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Страница приветствия / Ввод юзернейма -->
+    <div id="welcome-page" class="page">
+        <div class="box" style="text-align: center; margin-top: 80px;">
+            <div style="font-size: 3rem; margin-bottom: 16px;">👋</div>
+            <h2 class="box-title">Добро пожаловать!</h2>
+            <p style="color:#718096; margin-bottom:24px;">Введи свой юзернейм, чтобы продолжить</p>
+            <input type="text" id="new-username" placeholder="Твой юзернейм">
+            <button class="save-btn" onclick="saveUser()">✅ Продолжить</button>
+        </div>
+        <footer>TukShop VPN 🪙💸 © 2026</footer>
+    </div>
+
+    <!-- Главное меню -->
+    <div id="menu-page" class="page">
+        <h1 class="welcome">👋 Привет, <span class="username-here" id="welcome-name">друг</span>!</h1>
+        <div class="container">
+            <div class="card" onclick="showPage('profile-page')">
+                <span class="card-icon">👤</span>
+                <span class="card-title">Профиль</span>
+            </div>
+            <div class="card" onclick="showPage('subscription-page')">
+                <span class="card-icon">🔑</span>
+                <span class="card-title">Твоя подписка</span>
+            </div>
+            <div class="card" onclick="showPage('about-page')">
+                <span class="card-icon">🛒</span>
+                <span class="card-title">О магазине</span>
+            </div>
+            <div class="card" onclick="window.open('https://t.me/Artew777', '_blank')">
+                <span class="card-icon">💬</span>
+                <span class="card-title">Поддержка</span>
+            </div>
+            <div class="card" onclick="window.open('https://t.me/+7HHIP7lsB-IzNDc1', '_blank')">
+                <span class="card-icon">📢</span>
+                <span class="card-title">Наш канал</span>
+            </div>
+            <div class="card" onclick="window.open('https://t.me/SELEHVPAN', '_blank')">
+                <span class="card-icon">💭</span>
+                <span class="card-title">Наш чат</span>
+            </div>
+        </div>
+        <footer>TukShop VPN 🪙💸 © 2026</footer>
+    </div>
+
+    <!-- Профиль -->
+    <div id="profile-page" class="page">
+        <button class="back-btn" onclick="showPage('menu-page')">← Назад</button>
+        <div class="box">
+            <h2 class="box-title">👤 Твой профиль</h2>
+            
+            <div class="info-row">
+                <div class="info-label">👤 Твой юзернейм</div>
+                <div class="info-value" id="profile-username">—</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">📅 Дата регистрации</div>
+                <div class="info-value" id="reg-date">—</div>
+            </div>
+            
+            <div class="info-row">
+                <div class="info-label">🎁 Промокод на скидку 10%</div>
+                <div class="promo-box">
+                    <span class="promo-text" id="promo-code">TUK10</span>
+                    <button class="copy-btn" onclick="copyPromo()">📋 Копировать</button>
+                    <span class="promo-desc">Используй при оплате — 10% скидки!</span>
+                </div>
+            </div>
+        </div>
+        <footer>TukShop VPN 🪙💸 © 2026</footer>
+    </div>
+
+    <!-- Твоя подписка -->
+    <div id="subscription-page" class="page">
+        <button class="back-btn" onclick="showPage('menu-page')">← Назад</button>
+        <div class="box">
+            <h2 class="box-title">📱 Выбери свою платформу</h2>
+            
+            <div class="platform-card" onclick="showPlatform('android')" id="card-android">
+                <div class="platform-name">🤖 Android</div>
+            </div>
+            <div class="platform-card" onclick="showPlatform('ios')" id="card-ios">
+                <div class="platform-name">🍎 iOS</div>
+            </div>
+            <div class="platform-card" onclick="showPlatform('win')" id="card-win">
+                <div class="platform-name">🪟 Windows</div>
+            </div>
+        </div>
+
+        <!-- Android -->
+        <div id="section-android" class="box hidden">
+            <h2 class="box-title">🤖 Android — подключение</h2>
+            
+            <div class="method-block">
+                <div class="method-title">✨ Happ</div>
+                <div class="link-row">
+                    <span class="link-text">https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('and-happ-link')">📋</button>
+                </div>
+                <div class="qrcode-block">
+                    <div class="qrcode-img">📸</div>
+                    <p class="qrcode-note">Сканируй код в приложении Happ</p>
+                    <a href="https://astonishing-kheer-f96fab.netlify.app/" target="_blank" class="oneclick-btn">👈 По 1 клику</a>
+                </div>
+                <span id="and-happ-link" class="hidden">https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+            
+            <div class="method-block">
+                <div class="method-title">🔗 V2</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=v2/os=android/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('and-v2-link')">📋</button>
+                </div>
+                <span id="and-v2-link" class="hidden">https://p.kfwl.lol/ua=v2/os=android/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+            
+            <div class="method-block">
+                <div class="method-title">📥 Inct</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=incy/os=android/h=ed3ee7e773d5675c/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('and-inct-link')">📋</button>
+                </div>
+                <a href="https://zesty-dusk-533992.netlify.app/" target="_blank" class="oneclick-btn">👈 По 1 клику</a>
+                <span id="and-inct-link" class="hidden">https://p.kfwl.lol/ua=incy/os=android/h=ed3ee7e773d5675c/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+        </div>
+
+        <!-- iOS -->
+        <div id="section-ios" class="box hidden">
+            <h2 class="box-title">🍎 iOS — подключение</h2>
+            
+            <div class="method-block">
+                <div class="method-title">✨ Happ</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=happ/os=ios/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('ios-happ-link')">📋</button>
+                </div>
+                <div class="qrcode-block">
+                    <div class="qrcode-img">📸</div>
+                    <p class="qrcode-note">Сканируй код в приложении Happ</p>
+                </div>
+                <span id="ios-happ-link" class="hidden">https://p.kfwl.lol/ua=happ/os=ios/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+            
+            <div class="method-block">
+                <div class="method-title">🔗 V2</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=v2/os=ios/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('ios-v2-link')">📋</button>
+                </div>
+                <span id="ios-v2-link" class="hidden">https://p.kfwl.lol/ua=v2/os=ios/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+            
+            <div class="method-block">
+                <div class="method-title">📥 Inct</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=incy/os=ios/h=e7efde587491e964/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('ios-inct-link')">📋</button>
+                </div>
+                <span id="ios-inct-link" class="hidden">https://p.kfwl.lol/ua=incy/os=ios/h=e7efde587491e964/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+        </div>
+
+        <!-- Windows -->
+        <div id="section-win" class="box hidden">
+            <h2 class="box-title">🪟 Windows — подключение</h2>
+            
+            <div class="method-block">
+                <div class="method-title">✨ Happ</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=happ/os=win/h=6c6f4fe2633269a6/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('win-happ-link')">📋</button>
+                </div>
+                <div class="qrcode-block">
+                    <div class="qrcode-img">📸</div>
+                    <p class="qrcode-note">Сканируй код в приложении Happ</p>
+                </div>
+                <span id="win-happ-link" class="hidden">https://p.kfwl.lol/ua=happ/os=win/h=6c6f4fe2633269a6/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+            
+            <div class="method-block">
+                <div class="method-title">🔗 V2</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=v2/os=win/h=6c6f4fe2633269a6/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('win-v2-link')">📋</button>
+                </div>
+                <span id="win-v2-link" class="hidden">https://p.kfwl.lol/ua=v2/os=win/h=6c6f4fe2633269a6/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+            
+            <div class="method-block">
+                <div class="method-title">📥 Inct</div>
+                <div class="link-row">
+                    <span class="link-text">https://p.kfwl.lol/ua=incy/os=win/h=6c6f4fe2633269a6/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+                    <button class="copy-btn" onclick="copyText('win-inct-link')">📋</button>
+                </div>
+                <span id="win-inct-link" class="hidden">https://p.kfwl.lol/ua=incy/os=win/h=6c6f4fe2633269a6/https://raw.githubusercontent.com/Bail12hpo/tukshop..vpn/main/sub.txt</span>
+            </div>
+        </div>
+        
+        <footer>TukShop VPN 🪙💸 © 2026</footer>
+    </div>
+
+    <!-- О магазине -->
+    <div id="about-page" class="page">
+        <button class="back-btn" onclick="showPage('menu-page')">← Назад</button>
+        <div class="box">
+            <h2 class="box-title">🛒 О нашем магазине</h2>
+            <p style="color:#4a5568; line-height:1.8;">
+                <strong>TukShop VPN</strong> — твой надёжный доступ в интернет без блокировок!<br><br>
+                ✅ Стабильная скорость<br>
+                ✅ Большой выбор стран<br>
+                ✅ Поддержка 24/7<br>
+                ✅ Выгодные подписки<br><br>
+                Мы работаем для тебя с ❤️<br>
+                Если есть вопросы — пиши нам в поддержку! 💬
+            </p>
+        </div>
+        <footer>TukShop VPN 🪙💸 © 2026</footer>
+    </div>
+
+    <script>
+        const PROMO_CODE = 'TUK10';
+        let savedUsername = localStorage.getItem('tukshop_username');
+        let regDate = localStorage.getItem('tukshop_reg_date');
+
+        function init() {
+            if (!savedUsername) {
+                showPage('welcome-page');
+            } else {
+                showPage('menu-page');
+                updateWelcomeName(savedUsername);
+            }
+        }
+
+        function saveUser() {
+            const input = document.getElementById('new-username');
+            const name = input.value.trim();
+           
