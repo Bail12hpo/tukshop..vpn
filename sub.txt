@@ -2,7 +2,7 @@
 #subscription-userinfo: upload=0; download=0; total=0; expire=4102444799
 #support-url: https://t.me/Artew777
 #announce: Если не работает ВПН просто обновите 🔄 и все будет работать☑️
-#profile-update-interval: 1
+#profile-update-interval: https://t.me/TukShopVpnbot
 #expires: 01.01.2100
 #status: active
 #expired: false
