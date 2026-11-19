@@ -7,7 +7,7 @@
 #expires: 01.01.2100
 #status: active
 #expired: false
-hysteria2://4VgmxGni5Q2K4tx3iNG-4sr3BIpnFd3fZml9NAzxsxE@mylumina.sbs:443?security=tls&fm=%7B%7D&sni=mylumina.sbs#%D0%90%D0%92%D0%A2%D0%9E%D0%92%D0%AB%D0%91%D0%9E%D0%A0%20%F0%9F%9B%A1%EF%B8%8F%20VPN
+hysteria2://CdOn4POGq1uLpZ5TB-AkmUI9HdfOt9YCcf8EsYyXhHw@pl.mylumina.sbs:443?security=tls&fm=%7B%7D&sni=pl.mylumina.sbs#%F0%9F%87%B4%F0%9F%87%B2%D0%90%D0%92%D0%A2%D0%9E%D0%92%D0%AB%D0%91%D0%9E%D0%A0%20%F0%9F%9B%A1%EF%B8%8F%20VPN
 vless://de7efd06-187c-4cac-8072-88e5cdc3424d@201.8.64.209:443?encryption=none&security=reality&sni=mylumina.sbs&fp=firefox&pbk=EJKJxu6-N6aicqrzlwr62G6R7UvBzIWusNDOOU66uHk&sid=30257f7c&spx=%2F47ad947169d1946&type=tcp&headerType=none#%F0%9F%87%B3%F0%9F%87%B1%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%E2%9A%A1
 vless://de7efd06-187c-4cac-8072-88e5cdc3424d@panel.mylumina.sbs:1443?encryption=none&security=reality&sni=panel.mylumina.sbs&fp=firefox&pbk=MlepEv4VHNN-_eSh7W5UoGcjL95xc8lG1As4kYtPLk8&sid=43c948b76b211013&spx=%2F5ce7eaa277b4629&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F%20%E2%9A%A1
 vless://de7efd06-187c-4cac-8072-88e5cdc3424d@pl.mylumina.sbs:443?encryption=none&security=reality&sni=pl.mylumina.sbs&fp=firefox&pbk=Vc0iFQwj034FcXPQ44_fqbRrgwePylUIEvJQg1GHn1A&sid=d791686772c9d1b7&spx=%2F5ce7eaa277b4629&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%B1%20%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%20%E2%9A%A1
